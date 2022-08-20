@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_input_name"
+                android:textColor="@color/gray_text"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/edt_input_name_staff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_title_name"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/con_birthday"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:src="@drawable/ic_launcher_background"
+                android:id="@+id/img_icon_birthday"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="16dp" />
+
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/img_icon_birthday"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/text_input_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_title_birthday"
+                    android:textColor="@color/gray_text"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:layout_marginTop="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_input_birthday_staff"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_title_department"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_input_department"
+                android:textColor="@color/gray_text"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/edt_input_department_staff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_title_department"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/black"
+                android:inputType="number"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/btn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_text"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp"
+                android:text="Thêm"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:background="@color/gray_text"
+                android:layout_marginLeft="16dp"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="16dp"
+                android:text="Hủy"
+                android:textColor="@color/white"
+                android:layout_toRightOf="@id/btn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_cancel"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

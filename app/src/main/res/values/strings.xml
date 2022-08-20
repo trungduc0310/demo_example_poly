@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DemoTest1</string>
+    <string name="text_tab_list_staff">Danh sách nhân sự</string>
+    <string name="text_tab_add_staff">Thêm nhân sự</string>
+    <string name="text_input_name">Nhập tên:</string>
+    <string name="text_input_birthday">Nhập ngày sinh</string>
+    <string name="text_input_department">Nhập phòng ban</string>
+</resources>

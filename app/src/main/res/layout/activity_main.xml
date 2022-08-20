@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ln_tab"
+        android:background="@color/background_green"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingVertical="12dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/select_tab_layout"
+            android:id="@+id/tv_tab_list_staff"
+            android:text="@string/text_tab_list_staff"
+            android:textAllCaps="true"
+            android:textSize="15sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:paddingVertical="12dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/select_tab_layout"
+            android:id="@+id/tv_tab_add_staff"
+            android:textAllCaps="true"
+            android:textSize="15sp"
+            android:text="@string/text_tab_add_staff"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vp_main_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ln_tab" />
+
+</RelativeLayout>
